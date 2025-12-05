@@ -1,6 +1,21 @@
 function Email() {
   const obfuscated = [97,108,101,120,97,110,100,101,114,46,98,114,107,110,64,112,114,111,116,111,110,46,109,101]
-  alert(String.fromCharCode(...obfuscated))
+  
+  const emailSpan = document.getElementById("email")
+
+  console.log("Yep")
+  
+  emailSpan.innerHTML = (String.fromCharCode(...obfuscated))
+}
+
+function Phone() {
+  const obfuscated = [43, 52, 52, 32 ,55, 55, 55, 48, 50, 57, 54, 50, 48, 49]
+
+  const phoneSpan = document.getElementById("phone")
+
+  console.log("Yep")
+  
+  phoneSpan.innerHTML = (String.fromCharCode(...obfuscated))
 }
 
 function sleep(ms) {

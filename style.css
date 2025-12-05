@@ -18,7 +18,7 @@ body {
 }
 
 .codeText {
-  font-size: clamp(10px,3vw, 40px);
+  font-size: clamp(10px,3vw, 30px);
   
   color: lime;
   font-family: monospace;
@@ -37,6 +37,71 @@ body {
     h1 {
       font-family: monospace;
       font-size: clamp(10px,3vw, 40px);
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  
+  .main {
+    display: grid;
+
+    @media (max-width: 760px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    grid-template-rows: 100vh 50vh;
+
+    gap: 4vw;
+
+    .centerHorizon {
+      display: flex;
+      justify-content: center;
+    }
+
+    .centerCenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .box {
+      border: 2px solid lime;
+      border-radius: 10px;
+      
+      width: 30vw;
+
+      @media (max-width: 760px) {
+        height: 70vh;
+        width: 60vw;
+      }
+    }
+
+    .aboutMe {
+      grid-row: 1;
+
+      a {
+        text-decoration: none;
+        color: green;
+
+        font-size: clamp(5px,2vw,20px);
+      }
+    }
+
+    .aboutMe2 {
+      grid-row: 1;
+    }
+
+    .aboutMe3 {
+      grid-row: 2;
+    }
+
+    .aboutMe4 {
+      grid-row: 2;
     }
   }
 }
