@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     CodeLine.innerHTML = current
     await sleep(3)
   }
+  await sleep(50);
   current += "<br>" + "AlexB@Arch ~ $ "
   CodeLine.innerHTML = current
   for (let i=0; i < TextInput2.length; i++) {
