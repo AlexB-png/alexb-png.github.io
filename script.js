@@ -5,7 +5,7 @@ function Email() {
 
   console.log("Yep")
   
-  emailSpan.innerHTML = (String.fromCharCode(...obfuscated))
+  emailSpan.innerHTML = ("Email:  " + String.fromCharCode(...obfuscated))
 }
 
 function Phone() {
@@ -15,7 +15,7 @@ function Phone() {
 
   console.log("Yep")
   
-  phoneSpan.innerHTML = (String.fromCharCode(...obfuscated))
+  phoneSpan.innerHTML = ("Phone:  " + String.fromCharCode(...obfuscated))
 }
 
 function sleep(ms) {
