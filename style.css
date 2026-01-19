@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 2vw;
+}
+
 body {
   background-color: black;
   height: 100vh;
@@ -45,7 +49,6 @@ html {
 
     .box {
       width: 80vw;
-      height: 50vh;
 
       padding: 2vw;
       
@@ -59,9 +62,17 @@ html {
       align-items: center;
       gap: 5vh;
 
+      text-align: center;
+
       flex-direction: column;
 
       color: lime;
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    .box:hover {
+      transform: scale(1.02);
     }
 
     .intro {
@@ -79,6 +90,47 @@ html {
 
       h1 {
         font-size: 3rem;
+      }
+    }
+
+    .arduino {
+      .arduinoTitle {
+        font-size: 2rem;
+      }
+
+      a {
+        color: limegreen;
+        font-size: 1.5rem;
+      }
+
+      li {
+        width: 40rem;
+      }
+    }
+
+    .year1 {
+      a {
+        color: limegreen;
+        font-size: 1.5rem;
+      }
+
+      .courseTitle {
+        font-size: 1.5rem;
+      }
+
+      li {
+        width: 40rem;
+      }
+    }
+
+    .mp3 {
+      .mp3Title {
+        font-size: 2rem;
+      }
+
+      a {
+        color: limegreen;
+        font-size: 1.5rem;
       }
     }
   }
